@@ -3,10 +3,13 @@ package au.com.telstra.simcardactivator.components;
 import au.com.telstra.simcardactivator.models.ActuationResult;
 import au.com.telstra.simcardactivator.models.SimCard;
 import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+
+@Component
 public class SimCardActuationHandler {
+
     private final RestTemplate restTemplate;
     private final String incentiveApiUrl;
 
