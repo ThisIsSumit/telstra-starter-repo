@@ -72,4 +72,12 @@ public class SimCardActivatorStepDefinitions {
             assertEquals(Boolean.valueOf(expectedStatus.get("active")), simCardResponse.get("active"));
         }
     }
+
+    public boolean isActivationResult() {
+        return activationResult;
+    }
+
+    public void setActivationResult(boolean activationResult) {
+        this.activationResult = activationResult;
+    }
 }
