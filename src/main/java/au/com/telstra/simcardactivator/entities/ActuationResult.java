@@ -1,4 +1,4 @@
-package au.com.telstra.simcardactivator.models;
+package au.com.telstra.simcardactivator.entities;
 
 public class ActuationResult {
     private boolean success;

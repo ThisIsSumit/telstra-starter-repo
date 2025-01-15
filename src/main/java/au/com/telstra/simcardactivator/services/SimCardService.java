@@ -1,6 +1,6 @@
 package au.com.telstra.simcardactivator.services;
 
-import au.com.telstra.simcardactivator.models.SimCard;
+import au.com.telstra.simcardactivator.entities.SimCard;
 import au.com.telstra.simcardactivator.repositories.SimCardRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

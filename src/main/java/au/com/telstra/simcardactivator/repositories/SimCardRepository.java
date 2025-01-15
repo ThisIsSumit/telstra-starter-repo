@@ -1,6 +1,6 @@
 package au.com.telstra.simcardactivator.repositories;
 
-import au.com.telstra.simcardactivator.models.SimCard;
+import au.com.telstra.simcardactivator.entities.SimCard;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
