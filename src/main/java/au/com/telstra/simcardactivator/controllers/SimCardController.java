@@ -40,7 +40,6 @@ public class SimCardController {
         if (simCard != null) {
             return simCard;
         } else {
-
             return null;
         }
     }
