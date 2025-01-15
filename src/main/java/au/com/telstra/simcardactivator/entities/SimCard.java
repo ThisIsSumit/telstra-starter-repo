@@ -59,4 +59,10 @@ public class SimCard {
                 ", active=" + active +
                 '}';
     }
+
+    public boolean getActive() {
+        this.active = true;
+        return active;
+
+    }
 }

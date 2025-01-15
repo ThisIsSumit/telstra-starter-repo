@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+
 import au.com.telstra.simcardactivator.SimCardActivator;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -8,10 +9,11 @@ import io.cucumber.spring.CucumberContextConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootContextLoader;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.web.client.RestTemplate;
+
 
 import java.util.Map;
 
@@ -22,8 +24,9 @@ import static org.junit.Assert.assertNotNull;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @ContextConfiguration(classes = SimCardActivator.class, loader = SpringBootContextLoader.class)
 public class SimCardActivatorStepDefinitions {
-    @Autowired
-    private  RestTemplate restTemplate;
+
+
+    private TestRestTemplate restTemplate = new TestRestTemplate();
 
     private String baseUrl = "http://localhost:8080";
     private ResponseEntity<Map> response;
